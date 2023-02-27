@@ -1,21 +1,15 @@
-let boton = document.getElementById("boton");
-let mostrar1 = document.getElementById("hide-n");
-let botonPais = document.getElementById("boton-pais")
-let mostrar2 = document.getElementById("hide-pais")
-let mostrar3 = document.getElementById("hide-fn")
-let botonFn = document.getElementById("boton-fn")
-let mostrar4 = document.getElementById("hide-gmail")
-let botonCel = document.getElementById("boton-cel")
-let mostrar5 = document.getElementById("hide-cel")
-let botonGmail = document.getElementById("boton-gmail")
-let mostrar6 = document.getElementById("hide-gmail")
+// variables const
+const hideText1 = document.getElementById("mostrar-1");
+const hideText2 = document.getElementById("mostrar-2");
+const hideTextBtn1 = document.getElementById("hide-text-1");
+const hideTextBtn2 = document.getElementById("hide-text-2");
 
-botonCel.addEventListener("click", () => toggleText(mostrar5));
-botonFn.addEventListener("click",() => toggleText(mostrar3));
-botonPais.addEventListener("click",() => toggleText(mostrar2));
-botonGmail.addEventListener("click",() => toggleText(mostrar6));
-boton.addEventListener("click", () => toggleText(mostrar1));
-
-function toggleText(element) {
-    element.classList.toggle("show");
+// funcion reutilizable
+function toggleText(textElement, buttonText) {
+  textElement.classList.toggle("show");
+  buttonText.textContent = textElement.classList.contains("show") ? "Ver menos" : "Leer más";
 }
+
+// mostrar y ocultar
+hideTextBtn1.addEventListener("click", () => toggleText(hideText1, hideTextBtn1));
+hideTextBtn2.addEventListener("click", () => toggleText(hideText2, hideTextBtn2));

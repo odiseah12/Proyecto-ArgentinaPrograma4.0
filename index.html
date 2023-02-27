@@ -1,52 +1,63 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="estilos.css">
-    <script src="https://kit.fontawesome.com/0316b3a8d4.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cv Argentina Programa</title>
+    <script src="https://kit.fontawesome.com/0316b3a8d4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Cv-Proyecto</title>
 </head>
 <body>
-   
-    <div class="col-1">
-            <img src="./img/perfil.jpg" alt="">
-            
-
-                <ul>
-                <li><button id="boton"type="button"><i class="fa-solid fa-circle-user"></i></button></li>
-                
-                <li><button id="boton-fn"><i class="fa-solid fa-calendar-days"></button></i> </li>
-
-                <li><button id="boton-gmail"><i class="fa-solid fa-envelope"></i> </button> </li>
-                <li><button id="boton-cel"><i class="fa-solid fa-mobile"></i></button> </li>
-                <li><button id="boton-pais"><i class="fa-solid fa-location-dot"></i></button> </li>
-                
+    <main>
+        <nav class="nav">
+        
+            <ul>
+                <li><a href=""><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
             </ul>
-            <span class="hide" id="hide-n"> Gene Lynch </span>
-            <span class="hide" id="hide-fn">12/02/1996</span>
-            <span class="hide" id="hide-gmail">gene.lynch@example.com</span>
-            <span class="hide" id="hide-cel">(600) 985-3006</span>
-            <span class="hide" id="hide-pais">australi</span>
-        
-    </div>
-    <div class="row">
-
-        <h1>Bienvenido a mi Cv</h1>
-        <hr>
-        <div class="col1">
-            <h2>Experiencia</h2> <p> What is Lorem Ipsum?
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
-        <div class="col2"> <h2>Habilidades</h2> <p> What is Lorem Ipsum?
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
-        
-        
-     
-
-    </div>
+        </nav>
     
+        <div class="contenedor">
+            <div class="col-1">
+                <img src="./img/320770714_1324746851647038_4556006125843799587_n.jpg" width="230px" alt="">
+                
+              
+            </div>
+            <div class="col-2">
+                <h1>Damian Cruz</h1>
+                
+                <span>Edad: </span><p>       27</p> 
+                <br>
+                <span>Gmail: </span>
+                <p> odiseah1996@gmail.com</p>
+                <br>
+                <span>Telefono:</span>
+                <p>  3812222105</p>
+                <br>
+                <span>Pais:</span> 
+                <p>Argentina</p>
+               <br>  
+            </div>
+            <div class="col-3">
+                <i id="i" class="fa-solid fa-code"></i>
+                <h3>Experiencia</h3>
+                <p>desarrollador web <span>Front-end</span> Sitios web receptivos creados para una experiencia 
+                    de usuario óptima que logre sus objetivos comerciales.<button id="hide-text-1">Leer mas</button></p>
+                    <p id="mostrar-1" class="block">asdasdasd</p>
+                    <br>
+                    <br>
+                    <i id="i" class="fa-solid fa-check"></i>
+                    <h3>Habilidades</h3>
+                    <p><span>Diseños + Desarrollo</span>
+                    Diseños limpios y modernos, optimizados para el rendimiento
+                los motores de busquedas y la conversion deusuarios en clientes.<button id="hide-text-2">Leer mas</button></p>
+                <p id="mostrar-2" class="block">asdasdasd</p>
+            </div>
+        </div>
+      
+    </main>
     <script src="./script.js"></script>
 </body>
-
 </html>
