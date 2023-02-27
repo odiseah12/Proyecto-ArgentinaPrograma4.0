@@ -1,4 +1,5 @@
 // variables const
+alert("la web no esta echa responsive")
 const hideText1 = document.getElementById("mostrar-1");
 const hideText2 = document.getElementById("mostrar-2");
 const hideTextBtn1 = document.getElementById("hide-text-1");
